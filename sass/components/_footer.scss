@@ -1,0 +1,110 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-background-color);
+    color: var(--body-background-color);
+
+    & .container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__wrapper {
+        margin-right: 70px;
+
+        &:last-child {
+            margin-right: 0px;
+            margin-left: auto;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        font-style: normal;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-bottom: 9px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        color: var(--footer-contact-color);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .color {
+        color: var(--body-background-color);
+        background-color: var(--footer-social-color);
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__label {
+        margin-right: 12px;
+    }
+
+    &__email {
+        min-width: 358px;
+        padding: 15px 16px;
+        background-color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: var(--footer-contact-color);
+
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: var(--footer-contact-color);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include btn(200px);
+    }
+
+    &__btn-icon {
+        margin-left: 10px;
+    }
+}
