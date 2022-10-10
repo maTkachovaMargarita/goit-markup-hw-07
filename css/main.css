@@ -303,10 +303,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo--black {
+.logo__inner--black {
   color: var(--logo-text-color);
 }
-.logo--white {
+.logo__inner--white {
   color: var(--body-background-color);
 }
 

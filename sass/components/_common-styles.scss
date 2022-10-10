@@ -37,11 +37,11 @@ img {
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
-    &--black {
+    &__inner--black {
     color: var(--logo-text-color);
     }
 
-    &--white {
+    &__inner--white {
     color: var(--body-background-color);
     }
 }
